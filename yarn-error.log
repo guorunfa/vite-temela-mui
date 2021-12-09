@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /Users/runfaguo/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/runfaguo/.yarn/bin:/Users/runfaguo/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@emotion%2freact: ETIMEDOUT
+      at Timeout._onTimeout (/Users/runfaguo/.yarn/lib/cli.js:141545:19)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
+
+npm manifest: 
+  {
+    "name": "vite-typescript-mui5-template",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "serve": "vite preview"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.6.0",
+      "@emotion/styled": "^11.6.0",
+      "@mui/material": "^5.1.1",
+      "react": "^17.0.0",
+      "react-dom": "^17.0.0"
+    },
+    "devDependencies": {
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "@vitejs/plugin-react": "^1.0.0",
+      "typescript": "^4.3.2",
+      "vite": "^2.6.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

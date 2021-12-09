@@ -1,24 +1,16 @@
-import { ThemeProvider } from "@emotion/react";
-import { CssBaseline } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
-import ReactDOM from "react-dom";
-import Home from "./views/Home";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-let theme = createTheme({
-  palette: {
-    primary: {
-      main: "#00bcd4",
-    },
-    secondary: {
-      main: "#ff4081",
-    },
-  },
-});
+import { ChosenThemeProvider, ThemeProvider } from '@/providers'
+import App from './App'
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <Home />
-  </ThemeProvider>,
-  document.getElementById("root")
-);
+  <React.StrictMode>
+    <ChosenThemeProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </ChosenThemeProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
